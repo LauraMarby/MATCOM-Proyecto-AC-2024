@@ -203,14 +203,14 @@ class TestSuite:
 
     def run_all(self) -> None:
         for test in self.test:
-            test.run("logisim", self.circ, self.template)
+            test.run("D:/Estudio/COSAS DE SEGUNDO AÑO/Primer Semestre/Arquitectura de Computadoras/Softwares/Logisim/logisim-win-2.7.1.exe", self.circ, self.template)
             self.failed |= test.failed
             test.print()
 
     def run_test(self, test_name: str) -> None:
         for test in self.test:
             if test.name == test_name:
-                test.run("logisim", self.circ, self.template)
+                test.run("D:/Estudio/COSAS DE SEGUNDO AÑO/Primer Semestre/Arquitectura de Computadoras/Softwares/Logisim/logisim-win-2.7.1.exe", self.circ, self.template)
                 self.failed |= test.failed
                 test.print()
 
